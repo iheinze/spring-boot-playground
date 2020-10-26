@@ -1,0 +1,3 @@
+  			<!-- <img src="/images/vmSocks-green-onWhite.jpg">--> <!-- works -->
+  			<!--<img v-bind:src="image2">--> <!-- works -->
+  			<!--<img th:src="@{/images/vmSocks-green-onWhite.jpg}">--> <!-- works -->

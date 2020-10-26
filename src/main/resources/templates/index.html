@@ -7,18 +7,45 @@
     <link type="text/css" th:href="@{/css/MyFirst.css}" rel="stylesheet">
 </head>
 <body>
+
+<div class="nav-bar"></div>
+
 <div id="contents-main">
+
   <div id="app">
-    <h1>Heading 1</h1>
-    {{message}}
+  	<div class="product">
+  	
+  		<div class="product-image">
+  			<img th:attr="'v-bind:src'=image2">
+  		</div>
+  		
+  		<div class="product-info">
+  			<h1>{{ product }}</h1>
+			<p>{{ description }}</p>
+  		</div>
+
+ 	  
+    
+    </div>
   </div>
-  <div class="lead">
+  
+  <div id="vocab-app">
+  	<h1>{{ title }}</h1>
+  </div>
+  
+  <div id="debug">
+ 	 <div class="lead">
+ 	 		<h1>Some debug information</h1>
             <strong>Thyme Attribute Value:</strong>
             <span th:text="${attributeName}"></span>
         </div>
+  </div>
+    
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script "text/javascript" th:src="@{/js/MyFirst.js}"></script>
+<script "text/javascript" th:src="@{/js/VocabApp.js}"></script>
 </body>
 </html>
